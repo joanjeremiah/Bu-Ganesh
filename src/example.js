@@ -4,7 +4,11 @@ import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import uuidv4 from "uuid";
 import { config } from "react-spring";
-import RandomImage from "./random";
+import img1 from "./assets/1.jpg"
+import img2 from "./assets/2.jpg"
+import img3 from "./assets/3.jpg"
+import img4 from "./assets/4.jpg"
+import img5 from "./assets/5.jpg"
 
 const getTouches = (evt) => {
   return (
@@ -14,49 +18,42 @@ const getTouches = (evt) => {
 
 export default class Example extends Component {
   state = {
-    goToSlide: 1,
+    goToSlide: 0,
     offsetRadius: 10,
     showNavigation: true,
     enableSwipe: true,
-    config: config.slow
+    config: config.slower
   };
 
   slides = [
     {
       key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
+      content:  <img src={img1} className="box" />
     },
     {
       key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
+      content:  <img src={img2} className="box" />
     },
     {
       key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
+      content:  <img src={img3} className="box" />
     },
     {
       key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
+      content:  <img src={img4} className="box" />
     },
     {
       key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
-    },
-    {
-      key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
-    },
-    {
-      key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
-    },
-    {
-      key: uuidv4(),
-      content: <RandomImage cloud_name="dqm00mcjs" tag="carousel" />
+      content: <img src={img5} className="box" />
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
   });
+
+  autoPlay = () => {
+    const cur = (this.state.goToSlide+1) % this.slides.length;
+    this.setState({ goToSlide: cur });
+  }
 
   onChangeInput = (e) => {
     this.setState({
@@ -107,11 +104,14 @@ export default class Example extends Component {
   };
 
   componentDidMount() {
+    console.log(this.state.goToSlide)
+    this.interval = setInterval(this.autoPlay, 3000);
     window.addEventListener("keydown", this.handleKeyDown);
   }
 
   componentWillUnmount() {
     window.removeEventListener("keydown", this.handleKeyDown);
+    clearInterval(this.interval);
   }
 
   handleKeyDown = (e) => {
@@ -141,86 +141,6 @@ export default class Example extends Component {
           showNavigation={this.state.showNavigation}
           animationConfig={this.state.config}
         />
-        <div
-          style={{
-            margin: "0 auto",
-            marginTop: "2rem",
-            width: "50%",
-            display: "flex",
-            justifyContent: "space-around"
-          }}
-        >
-          {/*         <div>
-            <label>Go to slide: </label>
-            <input name="goToSlide" onChange={this.onChangeInput} />
-          </div>
-          <div>
-            <label>Offset Radius: </label>
-            <input name="offsetRadius" onChange={this.onChangeInput} />
-          </div>
-          <div>
-            <label>Show navigation: </label>
-            <input
-              type="checkbox"
-              checked={this.state.showNavigation}
-              name="showNavigation"
-              onChange={(e) => {
-                this.setState({ showNavigation: e.target.checked });
-              }}
-            />
-          </div>
-          <div>
-            <label>Enable swipe: </label>
-            <input
-              type="checkbox"
-              checked={this.state.enableSwipe}
-              name="enableSwipe"
-              onChange={(e) => {
-                this.setState({ enableSwipe: e.target.checked });
-              }}
-            />
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                this.setState({ config: config.gentle });
-              }}
-              disabled={this.state.config === config.gentle}
-            >
-              Gentle Transition
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                this.setState({ config: config.slow });
-              }}
-              disabled={this.state.config === config.slow}
-            >
-              Slow Transition
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                this.setState({ config: config.wobbly });
-              }}
-              disabled={this.state.config === config.wobbly}
-            >
-              Wobbly Transition
-            </button>
-          </div>
-          <div>
-            <button
-              onClick={() => {
-                this.setState({ config: config.stiff });
-              }}
-              disabled={this.state.config === config.stiff}
-            >
-              Stiff Transition
-            </button>
-            </div> */}
-        </div>
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import FireApp from "./logo";
 import Example from "./example";
 
 const FullScreenButton = ({ autoFullscreen }) => {
@@ -26,10 +25,10 @@ const FullScreenButton = ({ autoFullscreen }) => {
   return (
     <div>
       <div ref={appContainerRef}>
-        <FireApp />
+        {/* <FireApp /> */}
         <Example />
       </div>
-      <div
+      {/* <div
         style={{
           position: "fixed",
           top: "0%",
@@ -52,7 +51,7 @@ const FullScreenButton = ({ autoFullscreen }) => {
         >
           Fullscreen
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

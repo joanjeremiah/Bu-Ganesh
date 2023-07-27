@@ -50,43 +50,43 @@ const Awards = () => {
                 <ul className="auto-grid" role="list">
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name"> Award 1</h2>
-                            <p>1998</p>
+                            <h2 className="profile__name">  Best violinist from Madras Music Academy </h2>
+                            {/* <p>1998</p> */}
                             <img alt="" src={img1} />
                         </a>
                     </li>
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name">Award 2</h2>
-                            <p>1999</p>
+                            <h2 className="profile__name">Vani Kala Nipuna from Thyaga Brahma Gana Sabha</h2>
+                            {/* <p>1999</p> */}
                             <img alt="" src={img2} />
                         </a>
                     </li>
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name">Award 3</h2>
-                            <p>2002</p>
+                            <h2 className="profile__name">Naada Oli</h2>
+                            {/* <p>2002</p> */}
                             <img alt="Profile shot for Ruby Morris" src={img3} />
                         </a>
                     </li>
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name">Award 4</h2>
-                            <p>2004</p>
+                            <h2 className="profile__name">Naada Vipanchi</h2>
+                            {/* <p>2004</p> */}
                             <img alt="Profile shot for Nicholas Castro" src={img4} />
                         </a>
                     </li >
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name">Award 5</h2>
-                            <p>2006</p>
+                            <h2 className="profile__name">Maharajapuram Santhanam Endowment award</h2>
+                            {/* <p>2006</p> */}
                             <img alt="Profile shot for Marc Dixon" src={img5} />
                         </a>
                     </li >
                     <li>
                         <a  className="profile">
-                            <h2 className="profile__name">Chad Chadson</h2>
-                            <p>2020</p>
+                            <h2 className="profile__name">Ananya yuva puraskara</h2>
+                            {/* <p>2020</p> */}
                             <img alt="Profile shot for Chad" src={img1} />
                         </a>
                     </li >

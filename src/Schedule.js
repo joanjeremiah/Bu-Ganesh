@@ -1,35 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ScheduleCard from "./ScheduleCard";
 
 const Schedule = () => {
 
-    const [data, setData] = React.useState([
-        {
-            fromDate: "2023-07-24T10:30:45.123Z",
-            toDate: "2023-07-24T14:30:45.123Z",
-            location: "Online",
-            desc: "3 hours Violin session, Classical Instrumental"
-        },
-        {
-            fromDate: "2023-09-24T14:30:45.123Z",
-            toDate: "2023-09-24T18:30:45.123Z",
-            location: "Chennai",
-            desc: "4 hours Violin session"
-        },
-        {
-            fromDate: "2023-01-24T10:30:45.123Z",
-            toDate: "2023-01-24T14:30:45.123Z",
-            location: "Kolkata",
-            desc: "3 hours Violin session, Classical Instrumental"
-        }
-    ]);
+    const [data, setData] = React.useState([]);
+    const [filteredData, setFilteredData] = React.useState([]);
 
     React.useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/yourusername/your-repo/main/data.json');
+                const response = await fetch('https://raw.githubusercontent.com/joanjeremiah/Bu-Ganesh/main/schedules.json');
                 const jsonData = await response.json();
-                setData(jsonData.items);
+                console.log(jsonData);
+                setData(jsonData);
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -41,18 +24,22 @@ const Schedule = () => {
     // State variable to keep track of the selected filter option
     const [filterOption, setFilterOption] = React.useState("Upcoming");
 
-    // Filtering function based on the selected filter option
-    const filteredData = data.filter((schedule) => {
-        const currentDate = new Date().toISOString();
-        if (filterOption === "All") {
+    useEffect(() => {
+        // Filtering function based on the selected filter option
+        const filteredData = data.filter((schedule) => {
+            const currentDate = new Date().toISOString();
+            if (filterOption === "All") {
+                return true;
+            } else if (filterOption === "Upcoming") {
+                return schedule.fromDate > currentDate;
+            } else if (filterOption === "Past") {
+                return schedule.toDate < currentDate;
+            }
             return true;
-        } else if (filterOption === "Upcoming") {
-            return schedule.fromDate > currentDate;
-        } else if (filterOption === "Past") {
-            return schedule.toDate < currentDate;
-        }
-        return true;
-    });
+        });
+        // console.log(filteredData);
+        setFilteredData(filteredData);
+    }, [data, filterOption])
 
     const handleFilter = (e, option) => {
         // e.target.style.background = "#FFF";

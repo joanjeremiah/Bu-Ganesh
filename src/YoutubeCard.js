@@ -14,7 +14,9 @@ const YoutubeCard = ({ url, thumbnail }) => {
             width: "100%",
             aspectRatio: "3 / 2",
             maxWidth: "100%"
-        }} className="yt-video" light={<img className="yt-video" src={thumbnail}></img>} url={`https://www.youtube.com/watch?v=${url}`} />
+        }} className="yt-video" 
+        // light={<img className="yt-video" src={thumbnail}></img>} 
+        url={`https://www.youtube.com/watch?v=${url}`} />
     );
 }
 

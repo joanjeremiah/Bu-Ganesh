@@ -11,39 +11,40 @@ import Schedule from "./Schedule";
 import Contact from "./Contact";
 import CitiesSlider from "./LandingSlider";
 
-import img1 from "./assets/1.jpg"
-import img2 from "./assets/2.jpg"
-import img3 from "./assets/3.jpg"
-import img4 from "./assets/4.jpg"
-import img5 from "./assets/5.jpg"
+import img1 from "./assets/home1.jpg"
+import img2 from "./assets/home2.JPG"
+import img3 from "./assets/home3.JPG"
+import img4 from "./assets/home4.jpg"
+import img5 from "./assets/home5.jpg"
 import Artist from "./Artist";
 import Footer from "./Footer";
+import Gallery from "./Gallery";
 
 const slides = [
+  // {
+  //     city: 'Musician',
+  //     country: 'Dec 91',
+  //     img: img1,
+  // },
   {
-      city: 'Musician',
-      country: 'Dec 91',
-      img: img1,
+    city: 'The Violinist Steals The Show',
+    country: 'B U Ganesh',
+    img: img2,
   },
   {
-      city: 'Violinist',
-      country: 'Jul 99',
-      img: img2,
+    city: 'Strings Of Sensitive Notes',
+    country: 'B U Ganesh',
+    img: img3,
   },
   {
-      city: 'Vocalist',
-      country: 'Apr 94',
-      img: img3,
+    city: 'An Inspiring Vegada',
+    country: 'B U Ganesh',
+    img: img4,
   },
   {
-      city: 'Accompanist',
-      country: 'Nov 99',
-      img: img4,
-  },
-  {
-      city: 'Soloist',
-      country: 'Feb 96',
-      img: img5,
+    city: 'Complete Rappord With Audience',
+    country: 'B U Ganesh',
+    img: img5,
   },
 ];
 
@@ -89,7 +90,10 @@ function App() {
       <Awards />
       <PlayList />
       <Videos />
-      <PhoneDetector />
+      <div id="gallery-section-container">
+        <PhoneDetector />
+        <Gallery />
+      </div>
       <Schedule />
       <Contact />
       <Footer />

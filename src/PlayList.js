@@ -170,9 +170,12 @@ const PlayList = ({ }) => {
   }
 
   const handleSongChange = (i) => {
+    if( i < 0){
+      i = playlistData.length + i;
+    }
     const playlistBoxes = document.querySelectorAll('.playlist-box');
     playlistBoxes[i].click();
-    setCurSong(i);
+    setCurSong(i % playlistData.length);
   }
 
   return (
@@ -196,7 +199,7 @@ const PlayList = ({ }) => {
             {renderBoxes()}
           </div>
           <div className='music-player-container'>
-            <Player song={playlistData[curSong]} />
+            <Player i={curSong} song={playlistData[curSong]} handleSongChange={handleSongChange} />
           </div>
         </div>
       </div>

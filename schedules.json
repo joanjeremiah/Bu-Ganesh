@@ -1,8 +1,20 @@
 [
     {
-        "fromDate": "2023-07-24T10:30:45.123Z",
-        "toDate": "2023-07-24T14:30:45.123Z",
+        "fromDate": "2023-10-24T10:30:45.123Z",
+        "toDate": "2023-10-24T14:30:45.123Z",
         "location": "Online",
+        "desc": "3 hours Violin session, Classical Instrumental"
+    },
+    {
+        "fromDate": "2023-11-25T14:30:45.123Z",
+        "toDate": "2023-11-25T18:30:45.123Z",
+        "location": "Chennai",
+        "desc": "4 hours Violin session"
+    },
+    {
+        "fromDate": "2023-12-24T10:30:45.123Z",
+        "toDate": "2023-12-24T14:30:45.123Z",
+        "location": "Kolkata",
         "desc": "3 hours Violin session, Classical Instrumental"
     }
 ]

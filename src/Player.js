@@ -5,7 +5,7 @@ import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
 
-export default function Player({song}) {
+export default function Player({song, handleSongChange, i}) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState({
     min: "",
@@ -25,12 +25,14 @@ export default function Player({song}) {
       const sec = duration / 1000;
       const min = Math.floor(sec / 60);
       const secRemain = Math.floor(sec % 60);
+      console.log(min);
+      console.log(secRemain);
       setTime({
         min: min,
         sec: secRemain
       });
     }
-  }, [isPlaying]);
+  }, [isPlaying, duration]);
 
   useEffect(() => {
     if (isPlaying) {
@@ -64,6 +66,14 @@ export default function Player({song}) {
     }
   };
 
+  const playNext = () => {
+    handleSongChange(i+1);
+  }
+
+  const playPrevious = () => {
+    handleSongChange(i-1);
+  }
+
   return (
     <div className="component">
       <div>
@@ -92,7 +102,7 @@ export default function Player({song}) {
         />
       </div>
       <div>
-        <button className="playButton">
+        <button className="playButton" onClick={playPrevious}>
           <IconContext.Provider value={{ size: "3em", color: "#1a1a1a" }}>
             <BiSkipPrevious />
           </IconContext.Provider>
@@ -110,7 +120,7 @@ export default function Player({song}) {
             </IconContext.Provider>
           </button>
         )}
-        <button className="playButton">
+        <button className="playButton" onClick={playNext}>
           <IconContext.Provider value={{ size: "3em", color: "#1a1a1a" }}>
             <BiSkipNext />
           </IconContext.Provider>

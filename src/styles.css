@@ -170,8 +170,6 @@ body {
   margin: 0.4rem 1rem 0 0;
   padding: 0 0.3rem;
   cursor: pointer;
-  /* color: #000; */
-  /* font-weight: 400; */
 }
 
 .navbar--link-item a{
@@ -334,7 +332,7 @@ body {
 }
 
 .awards-new-container h1 {
-  width: 55%;
+  width: 75%;
   font-weight: 500;
   margin: 1rem auto;
   text-align: center;
@@ -348,12 +346,13 @@ body {
 }
 
 .awards-new-container .auto-grid {
-  width: 55%;
+  width: 75%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr !important;
   grid-gap: var(--auto-grid-gap, 0) !important;
   padding: 0;
+  list-style: none;
 }
 
 .awards-new-container .flow>*+* {
@@ -439,11 +438,11 @@ body {
 
 .awards-new-container .profile h2,
 .awards-new-container .profile p {
-  transform: translateY(2ex);
+  transform: translateY(0ex);
 }
 
 .awards-new-container .profile h2 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   font-weight: 900;
   letter-spacing: 0.03ch;
@@ -553,7 +552,7 @@ div.playlist-box {
 }
 
 .music-player-container {
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
 .music-player-container .musicCover {
@@ -565,11 +564,13 @@ div.playlist-box {
   border: none;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .music-player-container .component {
   margin: 0 auto;
 }
+
 
 .music-player-container .title {
   font-family: 'Poppins', sans-serif;
@@ -813,6 +814,7 @@ div.playlist-box {
   height: 1.7125rem;
   flex-shrink: 0;
   margin-right: .5rem;
+  cursor: pointer;
 }
 
 
@@ -885,6 +887,19 @@ footer .navbar--link-item a{
   color: white;
 }
 
+/* Mobile Gallery */
+.mobile-gallery-container{
+  background: white;
+  display: none;
+}
+
+.mobile-gallery{
+  display: none;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------------- */
+
 /* -------------------------------------------------------------------- */
 
 /* Responsive */
@@ -917,6 +932,45 @@ footer .navbar--link-item a{
   .music-section {
     grid-area: second;
     margin-top: 10vh;
+  }
+
+  .artist-container {
+    padding: 3rem;
+  }
+
+  .awards-new-container {
+    padding: 3rem 0;
+  }
+
+  .landing-carousel-container{
+    display: none;
+  }
+
+  .mobile-gallery-container{
+    display: block;
+  }
+
+  .awards-new-container .auto-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .navbar--logo-holder h1 {
+    font-size: 1rem;
+  }
+
+  .navbar--link-item {
+    margin: 0.4rem .5rem 0 0;
+    padding: 0 0.3rem;
+    font-size: .6rem;
+  }
+
+  .navbar-sticky {
+    left: 1%;
+    width: 98%;
+  }
+
+  #playlist-slide-container {
+    perspective: 300px;
   }
 }
 
@@ -955,10 +1009,41 @@ footer .navbar--link-item a{
     perspective: 400px;
   }
 
-  /* .playlist-box{
-    width: 200px !important;
-    height: 200px !important;
-  } */
+  .artist-container {
+    padding: 7rem;
+  }
+
+  .awards-new-container {
+    padding: 7rem 0;
+  }
+
+  .landing-carousel-container{
+    display: none;
+  }
+
+  .mobile-gallery-container{
+    display: block;
+  }
+
+
+  .awards-new-container .auto-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .navbar--logo-holder h1 {
+    font-size: 1rem;
+  }
+
+  .navbar--link-item {
+    margin: 0.4rem .8rem 0 0;
+    padding: 0 0.3rem;
+    font-size: .8rem;
+  }
+
+  .navbar-sticky {
+    left: 2.5%;
+    width: 95%;
+  }
 
 }
 
@@ -998,6 +1083,14 @@ footer .navbar--link-item a{
 
   #awards-container .awards-content p {
     width: 90%;
+  }
+
+  .artist-container {
+    padding: 9rem;
+  }
+
+  .awards-new-container {
+    padding: 9rem 0;
   }
 
 }

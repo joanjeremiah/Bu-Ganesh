@@ -1,39 +1,50 @@
 import React from "react";
 
-const Artist = ({stickyRef}) => {
+const Artist = ({ stickyRef }) => {
     return (
         <div id="artist-section" className="artist-container" ref={stickyRef}>
             <div className="artist">
                 <h1>The Artist</h1>
-                <p>Traditional Padantaram and Tonal opulence are the hallmarks
-                    of Basavanahalli Umakanth Ganesh Prasad’s concert
-                    experience.
-                    An outstanding violinist, a gifted vocalist and a passionate
-                    teacher, Ganesh Prasad, as a teenager, commuted between
-                    Bangalore and Chennai to realise his ambition to perfect his
-                    violin skills under the guidance of the redoubtable Prof V V
-                    Subrahmanyam. The Guru recognised an Ekalavya in the
-                    earnest disciple and imparted the nuances of the instrument and
-                    subtleties of Carnatic music. His earlier training under
-                    Basavanagudi G Nataraj and Bangalore S Shankar matured very
-                    soon and a first- rate musician arrived on the scene.
-                    Ganesh Prasad continued his advanced lessons in vocal
-                    music under Sangeetha Kalacharya Padma bhushan
-                    P.S.Narayanaswamy. This has complemented his instrumental
-                    skills and enriched his repertoire, adding an insightful dimension
-                    to his music.
-                    Blessed with perfect Sruthi and an innate sense of rhythm,
-                    Ganesh Prasad is in great demand as an accompanist. He has
-                    provided inspired support to eminent musicians, present and
-                    past – D.K Pattamal, K.V.Narayanaswamy, Dr.
-                    M.Balamuralikrishna, Dr.R.K.Srikantan, Dr.K.J.Yesudas,
-                    T.V.Shankarnarayanan, Madurai
-                    T.N.Sheshagopalan,Chitraveena Ravikiran, Sudha
-                    Raghunathan, Bombay Jayashree, Sanjay Subramanyam,
-                    T.M.Krishna, Abhishek Raghuram, among others.
-                    He is an A grade artist of All India Radio and Doordarshan. He
-                    has also performed as a solo Violinist and has given vocal
-                    concerts around the world.
+                <p>Vidwan B U Ganesh Prasad began his carnatic music training at the age of
+                    six on the violin under Vidwan Basavanagudi G Nataraj,and later,vocal
+                    music under Vidwan Bangalore S Shankar. With this solid foundation,he
+                    sought advanced training in Chennai under Kalai Mamani Prof V V
+                    Subramanyam and Sangita Kalacharya P S Narayanaswamy. Since then he has
+                    never looked back.He has established himself as a distinguished vocalist
+                    and a champion violinist,(solo and accompaniment) performing regularly at
+                    several national and international music festivals and reputable stages.
+                    Vidwan Ganesh Prasad is able to conflate the authentic vocal music
+                    experience and sublime instrumental manodharma in his concerts. His
+                    performances bring the memories of the old doyens of carnatic music and
+                    set the benchmark for the contemporary practitioners of the art. His
+                    adherence to traditional grammar,combined with soulful renditions from his
+                    rich repertoire,can take the devout students of carnatic music on an
+                    unforgettable pilgrimage in aesthetics.
+                </p>
+                <p>
+                    On the violin,he has accompanied great stalwarts,past and present: D
+                    K Pattammal, KVN, DR Balamuralikrishna Dr R K Srikantan Dr K J Yesudas,
+                    TV Sankaranarayanan, Madurai T N Seshagopalan Chitraveena Ravikiran, flute shashank,
+                    Sanjay Subrahmanyam, T M Krishna, Abhishek Raghuram,to name a few.His
+                    accolades include best violinist awards from Madras Music Academy,Ananya
+                    Puraskar award,Maharajapuram Santhanam Endowment Award and many more that adorn his
+                    cabinet.
+                </p>
+                <p>
+                    Because of his proficiency in both vocal and instrumental music, he is
+                    admired as a teacher all over the world. He imparts traditional values of
+                    classical music to his students with love to lead them on a rewarding
+                    journey to further explore the subtle nuances of the system. Many of his
+                    students have become competent achievers in the field, in India and
+                    overseas.
+                </p>
+                <p>
+                    Not resting on his past laurels,he perseveres with his research to refine
+                    his art and give inspiring lectures and conduct highly valued workshops.
+                    He has produced many Albums that lovers of music cherish.
+                    In a world of instant digital music and short-lived imitators,Vidwan
+                    Ganesh Prasad stands out as a genuine virtuoso who continues to engage and
+                    enrich the carnatic musicscape.
                 </p>
             </div>
         </div>

@@ -9,7 +9,7 @@ const Contact = () => {
         window.location.href = mailtoLink;
     };
     return (
-        <div className="contact-section-container">
+        <div id="contact-section" className="contact-section-container">
             <div className="contact-section">
                 <div className="contact-details">
                     <p>Phone Number</p>

@@ -37,7 +37,7 @@ import img5 from "./assets/5.jpg"
 
 const Awards = () => {
     return (
-        <div className="awards-new-container">
+        <div className="awards-new-container" id="awards-section">
             <h1> Awards </h1>
             <p>His mellifluous bowing and vocalised renditions on the Violin
                 have earned him accolades from a wide range of music lovers

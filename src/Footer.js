@@ -7,11 +7,12 @@ const Footer = () => {
                 <h1>Bu Ganesh Prasad</h1>
             </div>
             <ul className="navbar--link">
-                <li className="navbar--link-item">The Artist</li>
-                <li className="navbar--link-item">Awards</li>
-                <li className="navbar--link-item">Concerts</li>
-                <li className="navbar--link-item">Albums</li>
-                <li className="navbar--link-item">Contacts</li>
+                <li className="navbar--link-item"><a href="#artist-section">The Artist</a></li>
+                <li className="navbar--link-item"><a href="#awards-section">Awards</a></li>
+                <li className="navbar--link-item"><a href="#playlist-music-container">Albums</a></li>
+                <li className="navbar--link-item"><a href="#gallery-section">Gallery</a></li>
+                <li className="navbar--link-item"><a href="#concerts-section">Concerts</a></li>
+                <li className="navbar--link-item"><a href="#contact-section">Contacts</a></li>
             </ul>
         </footer>
     )

@@ -19,7 +19,7 @@ const PhoneDetector = (props) => {
 
 const DefaultApp = () => {
   return (
-    <div className="landing-carousel-container">
+    <div id="gallery-section" className="landing-carousel-container">
       <h1>Gallery</h1>
       <FullScreenButton />
     </div>

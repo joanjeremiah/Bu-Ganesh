@@ -2,7 +2,7 @@ import React from "react";
 
 const Artist = ({stickyRef}) => {
     return (
-        <div className="artist-container" ref={stickyRef}>
+        <div id="artist-section" className="artist-container" ref={stickyRef}>
             <div className="artist">
                 <h1>The Artist</h1>
                 <p>Traditional Padantaram and Tonal opulence are the hallmarks

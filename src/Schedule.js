@@ -39,7 +39,7 @@ const Schedule = () => {
     }, []);
 
     // State variable to keep track of the selected filter option
-    const [filterOption, setFilterOption] = React.useState("All");
+    const [filterOption, setFilterOption] = React.useState("Upcoming");
 
     // Filtering function based on the selected filter option
     const filteredData = data.filter((schedule) => {
@@ -59,14 +59,14 @@ const Schedule = () => {
         setFilterOption(option);
     };
     return (
-        <div className="schedule-section-container">
+        <div id="concerts-section" className="schedule-section-container">
             <div className='front-drop'>
                 <h1 className="section-title">Schedules</h1>
-                <div className="filter-buttons">
+                {/* <div className="filter-buttons">
                     <button style={(filterOption == "All") ? { background: "#FFF" } : {}} onClick={(e) => handleFilter(e, "All")}>All</button>
                     <button style={(filterOption == "Upcoming") ? { background: "#FFF" } : {}} onClick={(e) => handleFilter(e, "Upcoming")}>Upcoming</button>
                     <button style={(filterOption == "Past") ? { background: "#FFF" } : {}} onClick={(e) => handleFilter(e, "Past")}>Past</button>
-                </div>
+                </div> */}
                 <div className="schedule-section">
                     {filteredData.map((schedule, i) => {
                         return <ScheduleCard key={i} schedule={schedule} />;

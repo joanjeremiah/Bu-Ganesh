@@ -92,10 +92,10 @@ function App() {
       <Videos />
       <div id="gallery-section-container">
         <PhoneDetector />
-        <Gallery />
+        <Gallery/>
       </div>
       <Schedule />
-      <Contact />
+      <Contact/>
       <Footer />
     </div>
   )

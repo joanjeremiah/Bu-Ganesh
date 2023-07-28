@@ -55,9 +55,10 @@ const Schedule = () => {
                     <button style={(filterOption == "Past") ? { background: "#FFF" } : {}} onClick={(e) => handleFilter(e, "Past")}>Past</button>
                 </div> */}
                 <div className="schedule-section">
-                    {filteredData.map((schedule, i) => {
+                    {data.map((schedule, i) => {
                         return <ScheduleCard key={i} schedule={schedule} />;
                     })}
+                    {data.length == 0 && <p>No Upcoming Concerts</p>}
                 </div>
             </div>
         </div>

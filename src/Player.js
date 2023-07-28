@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import useSound from "use-sound";
-import qala from "./assets/Enil Paaindhidum Kaadhalae.mp3";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -21,7 +20,9 @@ export default function Player({song, handleSongChange, i}) {
   const [play, { pause, duration, sound }] = useSound(song.song);
 
   useEffect(() => {
+    console.log(song.song);
     if (duration) {
+      
       const sec = duration / 1000;
       const min = Math.floor(sec / 60);
       const secRemain = Math.floor(sec % 60);

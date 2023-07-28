@@ -1,42 +1,55 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import Player from './Player';
+import song1 from "./assets/B.U. GANESH PRASAD DARBARI KAANADA with Neyveli Narayan Chandrasekar Sharma [TubeRipper.com].mp3";
+import song2 from "./assets/Behag [TubeRipper.com].mp3";
+import song3 from "./assets/Deva deva [TubeRipper.com].mp3";
+import song4 from "./assets/neenyako ninna hangyako [TubeRipper.com].mp3";
+import song5 from "./assets/Glimpses of Pahadi [TubeRipper.com].mp3";
+import song6 from "./assets/Hamsadwani Alapana [TubeRipper.com].mp3";
 
 const playlistData = [
   {
     image: "https://picsum.photos/300/?image=51",
-    song: "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-    name: "Violin Cover 1",
+    song: song1,
+    name: "Darbari Kaanada",
     tag: "Instrumental",
-    duration: "4:51",
+    duration: "3:29",
   },
   {
     image: "https://picsum.photos/300/?image=52",
-    song: "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-    name: "Instrumental Sangeeth",
+    song: song2,
+    name: "Behag",
     tag: "Cover ",
-    duration: "3:06",
+    duration: "0:59",
   },
   {
     image: "https://picsum.photos/300/?image=53",
-    song: "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-    name: "Vocal play ",
+    song: song3,
+    name: "Deva deva",
     tag: "Audition",
-    duration: "2:57",
+    duration: "1:00",
   },
   {
     image: "https://picsum.photos/300/?image=54",
-    song: "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-    name: "Violin cover 2",
+    song: song4,
+    name: "Neenyako ninna hangyako",
     tag: "Concert",
-    duration: "3:23",
+    duration: "1:00",
   },
   {
     image: "https://picsum.photos/300/?image=55",
-    song: "https://samplelib.com/lib/preview/mp3/sample-3s.mp3",
-    name: "Sangeeth Instrumental",
+    song: song5,
+    name: "Glimpses of Pahadi",
     tag: "Cover",
-    duration: "3:07",
+    duration: "0:58",
+  },
+  {
+    image: "https://picsum.photos/300/?image=55",
+    song: song6,
+    name: "Hamsadwani Alapana",
+    tag: "Cover",
+    duration: "1:00",
   }
 ];
 

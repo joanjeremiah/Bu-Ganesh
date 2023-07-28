@@ -1,20 +1,76 @@
+ 
+
 [
     {
-        "fromDate": "2023-10-24T10:30:45.123Z",
-        "toDate": "2023-10-24T14:30:45.123Z",
-        "location": "Online",
-        "desc": "3 hours Violin session, Classical Instrumental"
+        "date": "1-5",
+        "month": "Aug",
+        "location": "Pearland TX",
+        "desc": "Violin workshop for the violin students"
     },
     {
-        "fromDate": "2023-11-25T14:30:45.123Z",
-        "toDate": "2023-11-25T18:30:45.123Z",
-        "location": "Chennai",
-        "desc": "4 hours Violin session"
+        "date": "6",
+        "month": "Aug",
+        "location": "Pearland TX",
+        "desc": "Vocal concert at Meenakshi temple"
     },
     {
-        "fromDate": "2023-12-24T10:30:45.123Z",
-        "toDate": "2023-12-24T14:30:45.123Z",
-        "location": "Kolkata",
-        "desc": "3 hours Violin session, Classical Instrumental"
+        "date": "12",
+        "month": "Aug",
+        "location": "KSHT, Frisco TX",
+        "desc": " Vocal concert"
+    },
+    {
+        "date": "13",
+        "month": "Aug",
+        "location": "Frisco TX",
+        "desc": "Vocal & Violin workshop"
+    },
+    {
+        "date": "20",
+        "month": "Aug",
+        "location": "Frisco TX",
+        "desc": "Violin Solo (Chamber music )"
+    },
+    {
+        "date": "22-26",
+        "month": "Aug",
+        "location": "Cary NC",
+        "desc": "Violin Solo (Chamber music )"
+    },
+    {
+        "date": "27",
+        "month": "Aug",
+        "location": "Cary NC",
+        "desc": "Vocal concert"
+    },
+    {
+        "date": "2-3",
+        "month": "Sep",
+        "location": "Swati Thirunal kritis, Charlotte NC",
+        "desc": "Vocal workshop"
+    },
+    {
+        "date": "10",
+        "month": "Sep",
+        "location": "Tampa FL",
+        "desc": "Vocal concert"
+    },
+    {
+        "date": "16",
+        "month": "Sep",
+        "location": "Seattle WA",
+        "desc": "Violin Solo"
+    },
+    {
+        "date": "17",
+        "month": "Sep",
+        "location": "SIFAA RALEIGH NC",
+        "desc": "Violin Solo"
+    },
+    {
+        "date": "24",
+        "month": "Sep",
+        "location": "SBAT, Maryland",
+        "desc": "Vocal concert"
     }
 ]

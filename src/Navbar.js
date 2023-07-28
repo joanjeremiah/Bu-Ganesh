@@ -36,8 +36,6 @@ import React from "react";
 const Navbar = ({ sticky }) => (
   <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
     <div className="navbar--logo-holder">
-      {/* {sticky ? <img src="https://drive.google.com/uc?id=1V-B6GzMF3PEUBXeDxJOwONfgNztKP_6P"
-        alt="logo" className="navbar--logo" /> : null} */}
       <h1>B U Ganesh Prasad</h1>
     </div>
     <ul className="navbar--link">

@@ -8,44 +8,51 @@ import song4 from "./assets/neenyako ninna hangyako [TubeRipper.com].mp3";
 import song5 from "./assets/Glimpses of Pahadi [TubeRipper.com].mp3";
 import song6 from "./assets/Hamsadwani Alapana [TubeRipper.com].mp3";
 
+import thumbnail1  from './assets/albums/thumbnail1.JPG';
+import thumbnail2  from './assets/albums/thumbnail2.jpg';
+import thumbnail3  from './assets/albums/thumbnail3.jpg';
+import thumbnail4  from './assets/albums/thumbnail4.jpg';
+import thumbnail5  from './assets/albums/thumbnail5.JPG';
+import thumbnail6  from './assets/albums/thumbnail6.JPG';
+
 const playlistData = [
   {
-    image: "https://picsum.photos/300/?image=51",
+    image: thumbnail1,
     song: song1,
     name: "Darbari Kaanada",
     tag: "Instrumental",
     duration: "3:29",
   },
   {
-    image: "https://picsum.photos/300/?image=52",
+    image: thumbnail2,
     song: song2,
     name: "Behag",
     tag: "Cover ",
     duration: "0:59",
   },
   {
-    image: "https://picsum.photos/300/?image=53",
+    image: thumbnail3,
     song: song3,
     name: "Deva deva",
     tag: "Audition",
     duration: "1:00",
   },
   {
-    image: "https://picsum.photos/300/?image=54",
+    image: thumbnail4,
     song: song4,
     name: "Neenyako ninna hangyako",
     tag: "Concert",
     duration: "1:00",
   },
   {
-    image: "https://picsum.photos/300/?image=55",
+    image: thumbnail5,
     song: song5,
     name: "Glimpses of Pahadi",
     tag: "Cover",
     duration: "0:58",
   },
   {
-    image: "https://picsum.photos/300/?image=55",
+    image: thumbnail6,
     song: song6,
     name: "Hamsadwani Alapana",
     tag: "Cover",
@@ -101,7 +108,7 @@ const PlayList = ({ }) => {
         gsap.set(box, {
           right: "50%",
           top: "50%",
-          margin: -190,
+          // margin: -190,
           // width: 400,
           // height: 400,
           borderRadius: "20%",

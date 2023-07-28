@@ -459,6 +459,7 @@ div.playlist-box {
   cursor: pointer;
   width: 410px;
   height: 410px;
+  margin: -190px;
 }
 
 #playlist-slide-container {
@@ -630,7 +631,7 @@ div.playlist-box {
 /* Schedule section  */
 .schedule-section-container {
   background: white;
-  padding-bottom: 5vh;
+  padding-bottom: 20vh;
   padding-top: 15vh;
   position: relative;
   width: 100%;
@@ -832,7 +833,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2.5rem 4rem 2.5rem;
+  padding: 2rem 2.5rem 2rem 2.5rem;
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -876,8 +877,91 @@ footer .navbar--link-item a{
 /* -------------------------------------------------------------------- */
 
 /* Responsive */
-@media (max-width: 575.98px) {
+@media (max-width: 440px) {
+  .schedule-section {
+    grid-template-columns: 1fr;
+  }
 
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+
+  .video-section>div {
+    grid-template-columns: 1fr;
+  }
+
+  #playlist-music-container .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "second"
+      "first";
+  }
+
+  #playlist-music-list {
+    grid-area: first;
+  }
+
+  .music-section {
+    grid-area: second;
+    margin-top: 10vh;
+  }
+
+  .artist-container {
+    padding: 2rem;
+  }
+
+  .awards-new-container {
+    padding: 3rem 0;
+  }
+
+  .landing-carousel-container{
+    display: none;
+  }
+
+  .back-drop{
+    display: none;
+  }
+
+  .schedule-section-container{
+    margin-top: 0vh;
+  }
+
+  .mobile-gallery-container{
+    display: block;
+  }
+
+  .awards-new-container .auto-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .navbar--logo-holder h1 {
+    font-size: .6rem;
+  }
+
+  .navbar--link-item {
+    margin: 0.4rem .2rem 0 0;
+    padding: 0 0.3rem;
+    font-size: .6rem;
+  }
+
+  .navbar-sticky {
+    top: 0;
+    left: 0%;
+    width: 100%;
+  }
+
+  #playlist-slide-container {
+    perspective: 200px;
+  }
+
+  div.playlist-box {
+    width: 310px;
+    height: 310px;
+    margin: -100px;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 575.98px){
   /* Your CSS rules for extra small devices */
   .schedule-section {
     grid-template-columns: 1fr;

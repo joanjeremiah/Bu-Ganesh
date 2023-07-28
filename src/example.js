@@ -246,23 +246,23 @@ export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img src={img1} className="box" />
+      content: <img loading="lazy"src={img1} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img2} className="box" />
+      content: <img loading="lazy"src={img2} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img3} className="box" />
+      content: <img loading="lazy"src={img3} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img4} className="box" />
+      content: <img loading="lazy"src={img4} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img5} className="box" />
+      content: <img loading="lazy"src={img5} className="box" />
     },
     {
       key: uuidv4(),
@@ -298,47 +298,47 @@ export default class Example extends Component {
     },
     {
       key: uuidv4(),
-      content: <img src={img14} className="box" />
+      content: <img loading="lazy"src={img14} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img15} className="box" />
+      content: <img loading="lazy"src={img15} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img16} className="box" />
+      content: <img loading="lazy"src={img16} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img17} className="box" />
+      content: <img  loading="lazy" src={img17} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img18} className="box" />
+      content: <img  loading="lazy" src={img18} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img19} className="box" />
+      content: <img  loading="lazy" src={img19} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img20} className="box" />
+      content: <img loading="lazy"src={img20} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img21} className="box" />
+      content: <img loading="lazy"src={img21} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img22} className="box" />
+      content: <img loading="lazy" src={img22} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img23} className="box" />
+      content: <img loading="lazy" src={img23} className="box" />
     },
     {
       key: uuidv4(),
-      content: <img src={img24} className="box" />
+      content: <img loading="lazy" src={img24} className="box" />
     },
 
   ].map((slide, index) => {

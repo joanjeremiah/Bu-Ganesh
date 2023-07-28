@@ -47,7 +47,6 @@ const Schedule = () => {
     };
     return (
         <div id="concerts-section" className="schedule-section-container">
-            <div className='front-drop'>
                 <h1 className="section-title">Schedules</h1>
                 {/* <div className="filter-buttons">
                     <button style={(filterOption == "All") ? { background: "#FFF" } : {}} onClick={(e) => handleFilter(e, "All")}>All</button>
@@ -60,7 +59,6 @@ const Schedule = () => {
                     })}
                     {data.length == 0 && <p>No Upcoming Concerts</p>}
                 </div>
-            </div>
         </div>
     )
 }

@@ -242,7 +242,7 @@ body {
   padding: 5rem 0;
 }
 
-#playlist-music-container .front-drop,
+/* #playlist-music-container .front-drop,
 #awards-container .front-drop,
 .schedule-section-container .front-drop{
   position: absolute;
@@ -253,6 +253,21 @@ body {
   background: white;
   z-index: 2;
   padding: 8rem 0;
+} */
+
+.back-drop{
+  height: 20vh;
+  position: relative;
+}
+
+.back-drop > div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 2;
 }
 
 #playlist-music-container .grid,
@@ -619,7 +634,8 @@ div.playlist-box {
   padding-top: 15vh;
   position: relative;
   width: 100%;
-  height: 90vh;
+
+  margin-top: -10vh;
 }
 
 .schedule-section {
@@ -903,6 +919,14 @@ footer .navbar--link-item a{
     display: none;
   }
 
+  .back-drop{
+    display: none;
+  }
+
+  .schedule-section-container{
+    margin-top: 0vh;
+  }
+
   .mobile-gallery-container{
     display: block;
   }
@@ -980,6 +1004,14 @@ footer .navbar--link-item a{
 
   .mobile-gallery-container{
     display: block;
+  }
+
+  .back-drop{
+    display: none;
+  }
+
+  .schedule-section-container{
+    margin-top: 0vh;
   }
 
 

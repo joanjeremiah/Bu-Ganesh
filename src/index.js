@@ -94,6 +94,7 @@ function App() {
         <PhoneDetector />
         <Gallery/>
       </div>
+      <div className="back-drop"><div></div></div>
       <Schedule />
       <Contact/>
       <Footer />

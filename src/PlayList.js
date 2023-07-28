@@ -193,7 +193,6 @@ const PlayList = ({ }) => {
 
   return (
     <div id="playlist-music-container">
-      {/* <div className='front-drop'> */}
       <h1 className='section-title'>Albums</h1>
       <div className='grid'>
         <div id="playlist-music-list">
@@ -216,7 +215,6 @@ const PlayList = ({ }) => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

@@ -26,202 +26,98 @@ import img22 from "./assets/gallery/With Sri Sanjay Subramanyam.jpg"
 import img23 from "./assets/gallery/With young Abhishek Raghuram.jpg"
 import img24 from "./assets/gallery/with Sangeetha Kalanidhi Sri R K Srikantan.jpg"
 
-
-// class Gallery extends Component {
-//     render() {
-
-//         let data = [
-//             {
-//                 des: "1",
-//                 imgSrc: img1
-//             },
-//             {
-//                 des: "2",
-//                 imgSrc: img2
-//             },{
-//                 des: "3",
-//                 imgSrc: img3
-//             },
-//             {
-//                 des: "4",
-//                 imgSrc: img4
-//             },{
-//                 des: "5",
-//                 imgSrc: img5
-//             },
-//             {
-//                 des: "6",
-//                 imgSrc: img6
-//             },{
-//                 des: "7",
-//                 imgSrc: img7
-//             },
-//             {
-//                 des: "8",
-//                 imgSrc: img8
-//             },{
-//                 des: "9",
-//                 imgSrc: img9
-//             },
-//             {
-//                 des: "10",
-//                 imgSrc: img10
-//             },{
-//                 des: "11",
-//                 imgSrc: img11
-//             },
-//             {
-//                 des: "12",
-//                 imgSrc: img12
-//             },{
-//                 des: "13",
-//                 imgSrc: img13
-//             },
-//             {
-//                 des: "14",
-//                 imgSrc: img14
-//             },
-//             {
-//                 des: "15",
-//                 imgSrc: img15
-//             },
-//             {
-//                 des: "16",
-//                 imgSrc: img16
-//             },
-//             {
-//                 des: "17",
-//                 imgSrc: img17
-//             },
-//             {
-//                 des: "18",
-//                 imgSrc: img18
-//             },
-//             {
-//                 des: "19",
-//                 imgSrc: img19
-//             },
-//             {
-//                 des: "20",
-//                 imgSrc: img20
-//             },
-//             {
-//                 des: "21",
-//                 imgSrc: img21
-//             },
-//             {
-//                 des: "22",
-//                 imgSrc: img22
-//             },
-//             {
-//                 des: "23",
-//                 imgSrc: img23
-//             },
-//             {
-//                 des: "24",
-//                 imgSrc: img24
-//             }
-//         ];
-
-//         return <div id='gallery-section' className='mobile-gallery-container'><CarouselSlider className="mobile-gallery" slideItems = {data} />;</div>
-//     }
-// }
-
-// export default Gallery;
-
-
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Image } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 let data = [
     {
-        des: "1",
+        des: "2006 US Tour with O S Thyagarajan",
         imgSrc: img1
     },
     {
-        des: "2",
+        des: "At the age of 7",
         imgSrc: img2
     }, {
-        des: "3",
+        des: "At the age of 7",
         imgSrc: img3
     },
     {
-        des: "4",
+        des: "Award ceremony concert from All India Radio after winning the 1st prize",
         imgSrc: img4
     }, {
-        des: "5",
+        des: "Blessings from Sri.Kunnukudi Vaidyanathan",
         imgSrc: img5
     },
     {
-        des: "6",
+        des: "Concert at Shakthi  stal New Delhi",
         imgSrc: img6
     }, {
-        des: "7",
+        des: "Concert with Chitraveena Sri Ravikiran",
         imgSrc: img7
     },
     {
-        des: "8",
+        des: "Concert with my Guru Sri V.V. Subramanyam",
         imgSrc: img8
     }, {
-        des: "9",
+        des: "Concert with Sangeetha Kalanidhi T.V.Sankarnarayanan",
         imgSrc: img9
     },
     {
-        des: "10",
+        des: "Concert with Smt.Bombay Jayashree",
         imgSrc: img10
     }, {
-        des: "11",
+        des: "Late Prime Minister  Indira Gandi's rememberance day concert at New Delhi",
         imgSrc: img11
     },
     {
-        des: "12",
+        des: "My first Guru Sri Basavanagudi G.Nataraj",
         imgSrc: img12
     }, {
-        des: "13",
+        des: "Practice session with my father on Tambura",
         imgSrc: img13
     },
     {
-        des: "14",
+        des: "Receiving award from Veena Doraswamy Iyengar",
         imgSrc: img14
     },
     {
-        des: "15",
+        des: "Violin Duet with my disciple B.K.Raghu",
         imgSrc: img15
     },
     {
-        des: "16",
+        des: "Vocal Concert in Gokule Institute Bangalore",
         imgSrc: img16
     },
     {
-        des: "17",
+        des: "With Guru Sri PSN at Bhartiya Vidya Bhavan Chennai",
         imgSrc: img17
     },
     {
-        des: "18",
+        des: "With Guru Sri PSN",
         imgSrc: img18
     },
     {
-        des: "19",
+        des: "With Legendary Smt. D.K.Pattamal",
         imgSrc: img19
     },
     {
-        des: "20",
+        des: "With Sangeetha Kalanidhi Sri Trichur Ramachandran",
         imgSrc: img20
     },
     {
-        des: "21",
+        des: "With Sangeetha Kalanidhi Sri. K.V.Narayanaswamy",
         imgSrc: img21
     },
     {
-        des: "22",
+        des: "With Sri Sanjay Subramanyam",
         imgSrc: img22
     },
     {
-        des: "23",
+        des: "With young Abhishek Raghuram",
         imgSrc: img23
     },
     {
-        des: "24",
+        des: "with Sangeetha Kalanidhi Sri R K Srikantan",
         imgSrc: img24
     }
 ];
@@ -236,7 +132,12 @@ export default class extends React.Component {
                 >
                     <Slider>
                         {data.map((d,i) => {
-                            return <Slide index={i}><Image src={d.imgSrc} /></Slide>
+                            return <Slide index={i}><Image src={d.imgSrc} /><p style={{
+                              color: "white",
+                              fontSize: ".9rem",
+                              marginTop: "-5vh",
+                              textAlign: "center",
+                            }}>{d.des}</p></Slide>
                         })}
                     </Slider>
                     <div className='slider-mobile-control-container'>

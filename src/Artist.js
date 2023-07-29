@@ -24,7 +24,7 @@ const Artist = ({ stickyRef }) => {
                 <p>
                     On the violin,he has accompanied great stalwarts,past and present: D
                     K Pattammal, KVN, DR Balamuralikrishna Dr R K Srikantan Dr K J Yesudas,
-                    TV Sankaranarayanan, Madurai T N Seshagopalan Chitraveena Ravikiran, flute shashank,
+                    TV Sankaranarayanan, Madurai T N Seshagopalan Chitraveena Ravikiran, Flute Shashank,
                     Sanjay Subrahmanyam, T M Krishna, Abhishek Raghuram,to name a few.His
                     accolades include best violinist awards from Madras Music Academy,Ananya
                     Puraskar award,Maharajapuram Santhanam Endowment Award and many more that adorn his

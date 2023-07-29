@@ -44,8 +44,22 @@ body {
   margin-bottom: 2rem;
 }
 
+.spring-3d-container img{
+  max-width: 100%;
+  max-height: 60vh !important;
+  /* aspect-ratio: 1/1 !important; */
+}
 
-.box {
+.spring-3d-container p{
+  color: white;
+  font-size: 1rem;
+  z-index: 4;
+  /* margin-top: -10vh; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/* .box {
   transform-style: preserve-3d;
   position: absolute;
   display: none;
@@ -77,9 +91,9 @@ body {
   background: linear-gradient(var(--bg) 50%, transparent);
   transform: translate(-50%, -50%) rotate(180deg) translate(0, -100%) translate(0, -0.5vmin) scale(1.01);
   z-index: 2;
-}
+} */
 
-@supports (-webkit-box-reflect: below) {
+/* @supports (-webkit-box-reflect: below) {
   .box {
     -webkit-box-reflect: below 0.5vmin linear-gradient(transparent 0 50%, #fff 100%);
   }
@@ -118,7 +132,7 @@ body {
   37.5% {
     transform: translate(0, 25%);
   }
-}
+} */
 
 /* Navbar */
 .navbar {
@@ -1164,6 +1178,10 @@ footer .navbar--link-item a{
 
   .awards-new-container {
     padding: 9rem 0;
+  }
+
+  .spring-3d-container p{
+    font-size: .8rem;
   }
 
 }

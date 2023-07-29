@@ -35,310 +35,176 @@ const getTouches = (evt) => {
   );
 };
 
-// export default class Example extends Component {
-//   state = {
-//     goToSlide: 0,
-//     offsetRadius: 10,
-//     showNavigation: true,
-//     enableSwipe: true,
-//     config: config.slower
-//   };
-
-//   slides = [
-//     {
-//       key: uuidv4(),
-//       content: <img src={img1} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img2} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img3} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img4} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img5} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img6} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img7} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img8} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img9} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img10} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img11} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img12} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img13} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img14} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img15} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img16} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img17} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img18} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img19} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img20} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img21} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img22} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img23} className="box" />
-//     },
-//     {
-//       key: uuidv4(),
-//       content: <img src={img24} className="box" />
-//     },
-
-//   ].map((slide, index) => {
-//     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
-//   });
-
-//   autoPlay = () => {
-//     const cur = (this.state.goToSlide + 1) % this.slides.length;
-//     this.setState({ goToSlide: cur });
-//   }
-
-//   onChangeInput = (e) => {
-//     this.setState({
-//       [e.target.name]: parseInt(e.target.value, 10) || 0
-//     });
-//   };
-
-//   handleTouchStart = (evt) => {
-//     if (!this.state.enableSwipe) {
-//       return;
-//     }
-
-//     const firstTouch = getTouches(evt)[0];
-//     this.setState({
-//       ...this.state,
-//       xDown: firstTouch.clientX,
-//       yDown: firstTouch.clientY
-//     });
-//   };
-
-//   handleTouchMove = (evt) => {
-//     if (!this.state.enableSwipe || (!this.state.xDown && !this.state.yDown)) {
-//       return;
-//     }
-
-//     let xUp = evt.touches[0].clientX;
-//     let yUp = evt.touches[0].clientY;
-
-//     let xDiff = this.state.xDown - xUp;
-//     let yDiff = this.state.yDown - yUp;
-//     if (Math.abs(xDiff) > Math.abs(yDiff)) {
-//       if (xDiff > 0) {
-//         /* left swipe */
-//         this.setState({
-//           goToSlide: this.state.goToSlide + 1,
-//           xDown: null,
-//           yDown: null
-//         });
-//       } else {
-//         /* right swipe */
-//         this.setState({
-//           goToSlide: this.state.goToSlide - 1,
-//           xDown: null,
-//           yDown: null
-//         });
-//       }
-//     }
-//   };
-
-//   componentDidMount() {
-//     console.log(this.state.goToSlide)
-//     this.interval = setInterval(this.autoPlay, 3000);
-//     window.addEventListener("keydown", this.handleKeyDown);
-//   }
-
-//   componentWillUnmount() {
-//     window.removeEventListener("keydown", this.handleKeyDown);
-//     clearInterval(this.interval);
-//   }
-
-//   handleKeyDown = (e) => {
-//     switch (e.keyCode) {
-//       case 37:
-//         this.setState({ goToSlide: this.state.goToSlide - 1 });
-//         break;
-//       case 39:
-//         this.setState({ goToSlide: this.state.goToSlide + 1 });
-//         break;
-//       default:
-//         break;
-//     }
-//   };
-
-//   render() {
-//     return (
-//       <div
-//         style={{ width: "80%", height: "500px", margin: "0 auto" }}
-//         onTouchStart={this.handleTouchStart}
-//         onTouchMove={this.handleTouchMove}
-//       >
-//         <Carousel
-//           slides={this.slides}
-//           goToSlide={this.state.goToSlide}
-//           offsetRadius={this.state.offsetRadius}
-//           showNavigation={this.state.showNavigation}
-//           animationConfig={this.state.config}
-//         />
-//       </div>
-//     );
-//   }
-// }
-
 export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img1} className="box" />
+      content:
+        <div className="spring-3d-container">
+          <img loading="lazy" src={img1} className="box" />
+          <p>2006 US Tour with O S Thyagarajan</p>
+        </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img2} className="box" />
+      content: <div className="spring-3d-container">
+        <img loading="lazy" src={img2} className="box" />
+        <p>At the age of 7</p>
+      </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img3} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img3} className="box" />
+      <p>At the age of 9</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img4} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img4} className="box" />
+      <p>Award ceremony concert from All India Radio after winning the 1st prize</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img5} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img5} className="box" />
+      <p>Blessings from Sri.Kunnukudi Vaidyanathan</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img6} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img6} className="box" />
+      <p>Concert at Shakthi  stal New Delhi</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img7} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img7} className="box" />
+      <p>Concert with Chitraveena Sri Ravikiran</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img8} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img8} className="box" />
+      <p>Concert with my Guru Sri V.V. Subramanyam</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img9} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img9} className="box" />
+      <p>Concert with Sangeetha Kalanidhi T.V.Sankarnarayanan</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img10} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img10} className="box" />
+      <p>Concert with Smt.Bombay Jayashree</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img11} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img11} className="box" />
+      <p>Late Prime Minister  Indira Gandi's rememberance day concert at New Delhi</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img12} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img12} className="box" />
+      <p>My first Guru Sri Basavanagudi G.Nataraj</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img src={img13} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img13} className="box" />
+      <p>Practice session with my father on Tambura</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img14} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img14} className="box" />
+      <p>Receiving award from Veena Doraswamy Iyengar</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img15} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img15} className="box" />
+      <p>Violin Duet with my disciple B.K.Raghu</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img16} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img16} className="box" />
+      <p>Vocal Concert in Gokule Institute Bangalore</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img  loading="lazy" src={img17} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img17} className="box" />
+      <p>With Guru Sri PSN at Bhartiya Vidya Bhavan Chennai</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img  loading="lazy" src={img18} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img18} className="box" />
+      <p>With Guru Sri PSN</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img  loading="lazy" src={img19} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img19} className="box" />
+      <p>With Legendary Smt. D.K.Pattamal</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img20} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img20} className="box" />
+      <p>With Sangeetha Kalanidhi Sri Trichur Ramachandran</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy"src={img21} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img21} className="box" />
+      <p>With Sangeetha Kalanidhi Sri. K.V.Narayanaswamy</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy" src={img22} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img22} className="box" />
+      <p>With Sri Sanjay Subramanyam</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy" src={img23} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img23} className="box" />
+      <p>With young Abhishek Raghuram</p>
+    </div>
     },
     {
       key: uuidv4(),
-      content: <img loading="lazy" src={img24} className="box" />
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img24} className="box" />
+      <p>With Sangeetha Kalanidhi Sri R K Srikantan</p>
+    </div>
     },
 
   ].map((slide, index) => {
@@ -348,7 +214,7 @@ export default class Example extends Component {
   state = {
     goToSlide: 0,
     offsetRadius: 10,
-    showNavigation: true,
+    showNavigation: false,
     enableSwipe: true,
     config: config.slower,
     currentSlides: this.slides.slice(0, 5),
@@ -393,11 +259,11 @@ export default class Example extends Component {
       });
     }
   };
-  
-  
-  
-  
-  
+
+
+
+
+
 
   onChangeInput = (e) => {
     this.setState({

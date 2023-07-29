@@ -21,11 +21,6 @@ import Footer from "./Footer";
 import Gallery from "./Gallery";
 
 const slides = [
-  // {
-  //     city: 'Musician',
-  //     country: 'Dec 91',
-  //     img: img1,
-  // },
   {
     city: 'The Violinist Steals The Show',
     country: 'B U Ganesh',
@@ -37,12 +32,12 @@ const slides = [
     img: img3,
   },
   {
-    city: 'An Inspiring Vegada',
+    city: 'An Inspiring Begada',
     country: 'B U Ganesh',
     img: img4,
   },
   {
-    city: 'Complete Rappord With Audience',
+    city: 'Complete Rapport with the audience',
     country: 'B U Ganesh',
     img: img5,
   },

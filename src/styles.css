@@ -35,7 +35,7 @@ body {
 .landing-carousel-container {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  padding: 12rem 0 10rem 0;
+  padding: 12rem 0 8rem 0;
 }
 
 .landing-carousel-container h1{
@@ -750,6 +750,88 @@ div.playlist-box {
 
 /* ----------------------------------------------------------------- */
 
+/* Citations section */
+
+.citations-section-container{
+  background: white;
+  padding-bottom: 10vh;
+  padding-top: 15vh;
+}
+
+.citations-section{
+  width: 65%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.citations-section .citation-card {
+  box-shadow:  0px 2.945848226547241px 36.82310104370117px 0px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.citations-section .citation-card:hover {
+  box-shadow:  0px 2.945848226547241px 36.82310104370117px 0px rgba(0, 0, 0, 0.12);
+}
+
+.citation-card-img{
+  padding: .8rem .8rem 0 .8rem;
+  width: 100%;
+  height: 14rem;
+  /* aspect-ratio: 3/2; */
+}
+
+.citation-card-img > img{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.citation-card-content{
+  padding: .8rem .8rem 0 .8rem;
+  width: 100%;
+  height: 14rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.citation-card-content h4{
+  font-size: 1.5rem;
+}
+
+.citation-card-content h5{
+  font-size: 1rem;
+}
+
+.citations-section .citation-card .container {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: .4rem 0;
+  text-transform: uppercase;
+}
+
+.citations-section .citation-card .link{
+  text-align: center;
+  font-size: 1rem;
+  margin: .5rem 0;
+  color: #0A66C2;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.citations-section .citation-card .link a{
+  text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------- */
+
 /* Contact section */
 .contact-section-container {
   background: white;
@@ -948,6 +1030,10 @@ footer .navbar--link-item a{
     grid-template-columns: 1fr !important;
   }
 
+  .citations-section{
+    grid-template-columns: 1fr !important;
+  }
+
   .navbar--logo-holder h1 {
     font-size: .6rem;
   }
@@ -1033,6 +1119,10 @@ footer .navbar--link-item a{
     grid-template-columns: 1fr !important;
   }
 
+  .citations-section{
+    grid-template-columns: 1fr !important;
+  }
+
   .navbar--logo-holder h1 {
     font-size: 1rem;
   }
@@ -1114,6 +1204,10 @@ footer .navbar--link-item a{
 
 
   .awards-new-container .auto-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .citations-section{
     grid-template-columns: 1fr 1fr !important;
   }
 

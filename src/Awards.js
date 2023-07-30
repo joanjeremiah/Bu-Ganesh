@@ -5,6 +5,8 @@ import img3 from "./assets/awards/naada_oli.jpg";
 import img4 from "./assets/awards/naada_vipanchi.jpg";
 import img5 from "./assets/5.jpg"
 import img6 from "./assets/awards/place.jpg"
+import img7 from "./assets/awards/Kellogg.jpg"
+import img8 from "./assets/awards/Concerto.jpg"
 
 const Awards = () => {
     return (
@@ -54,7 +56,19 @@ const Awards = () => {
                             <h2 className="profile__name">Ananya yuva puraskara</h2>
                             <img loading="lazy" alt="" src={img6} />
                         </a>
+                    </li>
+                    <li>
+                        <a  className="profile">
+                            <h2 className="profile__name">Kellogg Violin Accompanist</h2>
+                            <img loading="lazy" alt="" src={img7} />
+                        </a>
                     </li >
+                    <li>
+                        <a  className="profile">
+                            <h2 className="profile__name"></h2>
+                            <img loading="lazy" alt="" src={img8} />
+                        </a>
+                    </li>
                 </ul >
             </div >
         </div >

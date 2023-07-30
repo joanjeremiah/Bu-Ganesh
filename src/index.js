@@ -19,6 +19,7 @@ import img5 from "./assets/home5.jpg"
 import Artist from "./Artist";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
+import Citations from "./Citations";
 
 const slides = [
   {
@@ -83,6 +84,7 @@ function App() {
       <CitiesSlider slides={slides} />
       <Artist stickyRef={stickyRef} />
       <Awards />
+      <Citations />
       <PlayList />
       <Videos />
       <div id="gallery-section-container">

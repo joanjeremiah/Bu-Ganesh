@@ -132,7 +132,7 @@ export default class extends React.Component {
                 >
                     <Slider>
                         {data.map((d,i) => {
-                            return <Slide index={i}><Image src={d.imgSrc} /><p style={{
+                            return <Slide key={d.imgSrc} index={i}><Image src={d.imgSrc} /><p style={{
                               color: "white",
                               fontSize: ".9rem",
                               marginTop: "-5vh",

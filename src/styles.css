@@ -754,13 +754,13 @@ div.playlist-box {
 
 .citations-section-container{
   background: white;
-  padding: 10rem 0;
+  padding: 7rem 0 10rem 0;
 }
 
 .citations-section-container h1 {
   width: 75%;
   font-weight: 500;
-  margin: 1rem auto;
+  margin: 0 auto 2rem auto;
   text-align: center;
 }
 

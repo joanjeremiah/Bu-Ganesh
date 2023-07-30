@@ -13,6 +13,7 @@ import TH from "./assets/citations/th.svg"
 const Citations = () => {
     return (
         <div className="citations-section-container">
+            <h1> Citation  </h1>
             <div className="citations-section">
                 <div className="citation-card">
                     <ModalImage
@@ -71,7 +72,7 @@ const Citations = () => {
 The young violinist B.U. Ganesh Prasad played a significant solo. His tutelage under violin maestro V.V. Subramaniam gave him the wisdom of including strength and delicacy to his offerings.....</span>
                     </div>
                     <div className="link">
-                        <a href="https://www.thehindu.com/features/friday-review/music/Strings-of-sensitive-notes/article14932648.ece">View blog..</a>
+                        <a href="https://www.thehindu.com/features/friday-review/music/Strings-of-sensitive-notes/article14932648.ece">View blog...</a>
                     </div>
                 </div>
 

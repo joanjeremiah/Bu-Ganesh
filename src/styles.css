@@ -754,8 +754,14 @@ div.playlist-box {
 
 .citations-section-container{
   background: white;
-  padding-bottom: 10vh;
-  padding-top: 15vh;
+  padding: 10rem 0;
+}
+
+.citations-section-container h1 {
+  width: 75%;
+  font-weight: 500;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .citations-section{
@@ -823,11 +829,19 @@ div.playlist-box {
   font-weight: 400;
   cursor: pointer;
   text-decoration: none;
+  display: grid;
+  place-items: center;
 }
 
 .citations-section .citation-card .link a{
   text-decoration: none;
+  color: #0A66C2;
 }
+.citations-section .citation-card .link a:active{
+  text-decoration: none;
+  color: #0A66C2;
+}
+
 
 
 /* ----------------------------------------------------------------- */
@@ -1058,6 +1072,85 @@ footer .navbar--link-item a{
     width: 310px;
     height: 310px;
     margin: -100px;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  max-height: 60vh;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 55px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
   }
 }
 

@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import Player from './Player';
-import song1 from "./assets/B.U. GANESH PRASAD DARBARI KAANADA with Neyveli Narayan Chandrasekar Sharma [TubeRipper.com].mp3";
-import song2 from "./assets/Behag [TubeRipper.com].mp3";
-import song3 from "./assets/Deva deva [TubeRipper.com].mp3";
-import song4 from "./assets/neenyako ninna hangyako [TubeRipper.com].mp3";
-import song5 from "./assets/Glimpses of Pahadi [TubeRipper.com].mp3";
-import song6 from "./assets/Hamsadwani Alapana [TubeRipper.com].mp3";
+import song1 from "./assets/01 Track 1.mp3";
+import song2 from "./assets/02 Track 2.mp3";
+import song3 from "./assets/03 Track 3.mp3";
+import song4 from "./assets/04 Track 4.mp3";
+import song5 from "./assets/05 Track 5.mp3";
+import song6 from "./assets/06 Track 6.mp3";
+import song7 from "./assets/07 Track 7.mp3";
+import song8 from "./assets/08 Track 8.mp3";
 
 import thumbnail1  from './assets/albums/thumbnail1.JPG';
 import thumbnail2  from './assets/albums/thumbnail2.jpg';
@@ -14,49 +16,65 @@ import thumbnail3  from './assets/albums/thumbnail3.jpg';
 import thumbnail4  from './assets/albums/thumbnail4.jpg';
 import thumbnail5  from './assets/albums/thumbnail5.JPG';
 import thumbnail6  from './assets/albums/thumbnail6.JPG';
+import thumbnail7  from './assets/albums/thumbnail7.png';
+import thumbnail8  from './assets/albums/thumbnail8.jpg';
 
 const playlistData = [
   {
     image: thumbnail1,
     song: song1,
-    name: "Darbari Kaanada",
-    tag: "Instrumental",
-    duration: "3:29",
+    name: "Karunimpa Sahana",
+    tag: "Varnam - Adi - Thiruvottiyur. - Thyagayya",
+    duration: "5:46",
   },
   {
     image: thumbnail2,
     song: song2,
-    name: "Behag",
-    tag: "Cover ",
-    duration: "0:59",
+    name: "Sree Maha Ganapathi",
+    tag: "Gowlai - Misra chapu - Muthuswamy Dixithar",
+    duration: "9:31",
   },
   {
     image: thumbnail3,
     song: song3,
-    name: "Deva deva",
-    tag: "Audition",
-    duration: "1:00",
+    name: "Sri Shankara",
+    tag: "Nagaswaravali - Rupakam - Mahavaidyanatha Sivan",
+    duration: "4:41",
   },
   {
     image: thumbnail4,
     song: song4,
-    name: "Neenyako ninna hangyako",
-    tag: "Concert",
-    duration: "1:00",
+    name: "Shankari Shankuru",
+    tag: "Saveri - Tisra nadai - Adi - ShayamaShastri",
+    duration: "17:35",
   },
   {
     image: thumbnail5,
     song: song5,
-    name: "Glimpses of Pahadi",
-    tag: "Cover",
-    duration: "0:58",
+    name: "Seethama Mayamma",
+    tag: "Vasantha - Roopakam - Tyagaraja",
+    duration: "4:52",
   },
   {
     image: thumbnail6,
     song: song6,
-    name: "Hamsadwani Alapana",
-    tag: "Cover",
-    duration: "1:00",
+    name: "Ethavunara",
+    tag: "Kalyani - Adi - Tyagaraja",
+    duration: "25:06",
+  },
+  {
+    image: thumbnail7,
+    song: song7,
+    name: "Govardhana giridhara",
+    tag: "Dharbhari - Kanda - Adi - Narayanatheertha",
+    duration: "4:08",
+  },
+  {
+    image: thumbnail8,
+    song: song8,
+    name: "Thillana",
+    tag: "Khamas - Adi - Patnam - Subramanya Iyer",
+    duration: "2:37",
   }
 ];
 

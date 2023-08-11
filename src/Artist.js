@@ -22,13 +22,11 @@ const Artist = ({ stickyRef }) => {
                     unforgettable pilgrimage in aesthetics.
                 </p>
                 <p>
-                    On the violin,he has accompanied great stalwarts,past and present: D
-                    K Pattammal, KVN, Dr Balamuralikrishna Dr R K Srikantan Dr K J Yesudas,
-                    TV Sankaranarayanan, Madurai T N Seshagopalan Chitraveena Ravikiran, Flute Shashank,
-                    Sanjay Subrahmanyam, T M Krishna, Abhishek Raghuram,to name a few.His
-                    accolades include best violinist awards from Madras Music Academy,Ananya
-                    Puraskar award,Maharajapuram Santhanam Endowment Award and many more that adorn his
-                    cabinet.
+                    On the violin, he has accompanied great stalwarts, past and present: D
+                    K Pattammal, KVN, Dr M Balamuralikrishna, Dr R K Srikantan, Dr K J Yesudas,
+                    T V Sankaranarayanan, Madurai T N Seshagopalan Chitraveena Ravikiran, Flute Shashank,
+                    Sanjay Subrahmanyam, Bombay Jayashri, T M Krishna, Abhishek Raghuram to name a few. His accolades include best violinist award from Madras Music Academy, Ananya Puraskar award, Maharajapuram Santhanam Endowment Award, Vani Kala Nipuna, Naada Oli
+                    and many more that adorn his cabinet.
                 </p>
                 <p>
                     Because of his proficiency in both vocal and instrumental music, he is

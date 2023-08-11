@@ -15,6 +15,7 @@ const Videos = () => {
                 <YoutubeCard url={'7jTUzshU4ws'} thumbnail={img2} />
                 <YoutubeCard url={'aW5LaRHspyM'} thumbnail={img3} />
                 <YoutubeCard url={'Lb_aLBRygE0'} thumbnail={img4} />
+                <YoutubeCard url={'HMXHYJ_cce0'} thumbnail={img4} />
             </div>
         </div>
     )

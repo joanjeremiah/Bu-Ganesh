@@ -16,7 +16,6 @@ const Awards = () => {
     const captionText = React.useRef(null);
 
     const handleImageOpen = (img, alt) => {
-        // console.log("hello", e.target)
         modal.current.style.display = "block";
         modalImg.current.src = img;
         captionText.current.innerHTML = alt;
@@ -57,15 +56,15 @@ const Awards = () => {
                             <img loading="lazy" alt="" src={img3} />
                         </a>
                     </li>
-                    <li onClick={() => handleImageOpen(img4, "Naada Vipanchi")}>
+                    <li onClick={() => handleImageOpen(img4, "Naada Kala Vipanchi")}>
                         <a className="profile">
-                            <h2 className="profile__name">Naada Vipanchi</h2>
+                            <h2 className="profile__name">Naada Kala Vipanchi</h2>
                             <img loading="lazy" alt="" src={img4} />
                         </a>
                     </li >
-                    <li onClick={() => handleImageOpen(img5, "Air first prize receiving from Veena Doraisway Iyengar")}>
+                    <li onClick={() => handleImageOpen(img5, "AIR first prize receiving from Veena Doraisway Iyengar")}>
                         <a className="profile">
-                            <h2 className="profile__name">Air first prize receiving from Veena Doraisway Iyengar</h2>
+                            <h2 className="profile__name">AIR first prize receiving from Veena Doraisway Iyengar</h2>
                             <img loading="lazy" alt="" src={img5} />
                         </a>
                     </li >
@@ -81,9 +80,9 @@ const Awards = () => {
                             <img loading="lazy" alt="" src={img7} />
                         </a>
                     </li >
-                    <li onClick={() => handleImageOpen(img8, "All India radio award")}>
+                    <li onClick={() => handleImageOpen(img8, "Concert in Italy")}>
                         <a className="profile">
-                            <h2 className="profile__name">All India radio award</h2>
+                            <h2 className="profile__name">Concert in Italy</h2>
                             <img loading="lazy" alt="" src={img8} />
                         </a>
                     </li>

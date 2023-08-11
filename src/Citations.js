@@ -64,19 +64,6 @@ const Citations = () => {
                 </div>
 
                 <div className="citation-card">
-                    <div className="citation-card-content">
-                        {/* <h4><b>The Hindu</b></h4> */}
-                        <img style={{width: '32px', height: "32px"}} src={TH} />
-                        <h5>Sensitive string of sensitive notes</h5>
-                        <span>It is no mean task for accompanying violinists to hold an concert together as the main artists, and keep audience interest alive through raga treatise, kriti, niraval or swarakalpana. That’s what they did at Shanmukhapriya’s Madhuradwani Isai Vizha held recently at Swamy’s Hall.
-The young violinist B.U. Ganesh Prasad played a significant solo. His tutelage under violin maestro V.V. Subramaniam gave him the wisdom of including strength and delicacy to his offerings.....</span>
-                    </div>
-                    <div className="link">
-                        <a href="https://www.thehindu.com/features/friday-review/music/Strings-of-sensitive-notes/article14932648.ece">View blog...</a>
-                    </div>
-                </div>
-
-                <div className="citation-card">
 
                     <ModalImage
                         small={img6}
@@ -87,6 +74,29 @@ The young violinist B.U. Ganesh Prasad played a significant solo. His tutelage u
 
                     <div className="container">
                         <h4><b>Blissful Strings</b></h4>
+                    </div>
+                </div>
+
+                <div className="citation-card">
+                    <div className="citation-card-content">
+                        <img style={{ width: '32px', height: "32px" }} src={TH} />
+                        <h5>Sensitive string of sensitive notes</h5>
+                        <span>It is no mean task for accompanying violinists to hold an concert together as the main artists, and keep audience interest alive through raga treatise, kriti, niraval or swarakalpana. That’s what they did at Shanmukhapriya’s Madhuradwani Isai Vizha held recently at Swamy’s Hall.
+                            The young violinist B.U. Ganesh Prasad played a significant solo. His tutelage under violin maestro V.V. Subramaniam gave him the wisdom of including strength and delicacy to his offerings.....</span>
+                    </div>
+                    <div className="link">
+                        <a href="https://www.thehindu.com/features/friday-review/music/Strings-of-sensitive-notes/article14932648.ece">View blog...</a>
+                    </div>
+                </div>
+
+                <div className="citation-card">
+                    <div className="citation-card-content">
+                        <img style={{ width: '32px', height: "32px" }} src={TH} />
+                        <h5>A well-balanced concert by Shertalai Ranganatha Sharma</h5>
+                        <span>Ranganatha Sharma and violinist B.U. Ganesh Prasad exchanged some inspiring swara sallies here....</span>
+                    </div>
+                    <div className="link">
+                        <a href="https://www.thehindu.com/entertainment/music/a-well-balanced-concert-by-shertalai-ranganatha-sharma/article38021392.ece">View blog...</a>
                     </div>
                 </div>
 

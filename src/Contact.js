@@ -12,7 +12,7 @@ const Contact = () => {
         <div id="contact-section" className="contact-section-container">
             <div className="contact-section">
                 <div className="contact-details">
-                    <p>Phone Number</p>
+                    <p>Phone Number / WhatsApp</p>
                     <p>+91 98403 86369</p>
                     <br />
                     <p>Mail id</p>

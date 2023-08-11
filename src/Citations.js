@@ -92,8 +92,8 @@ const Citations = () => {
                 <div className="citation-card">
                     <div className="citation-card-content">
                         <img style={{ width: '32px', height: "32px" }} src={TH} />
-                        <h5>A well-balanced concert by Shertalai Ranganatha Sharma</h5>
-                        <span>Ranganatha Sharma and violinist B.U. Ganesh Prasad exchanged some inspiring swara sallies here....</span>
+                        <h5>Ganesh Prasad on the violin was equally sharp, and his responses to the vocalist’s projections were commendable.</h5>
+                        <span>Ranganatha Sharma and violinist B.U. Ganesh Prasad exchanged</span>
                     </div>
                     <div className="link">
                         <a href="https://www.thehindu.com/entertainment/music/a-well-balanced-concert-by-shertalai-ranganatha-sharma/article38021392.ece">View blog...</a>

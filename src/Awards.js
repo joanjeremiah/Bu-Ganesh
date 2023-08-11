@@ -68,9 +68,9 @@ const Awards = () => {
                             <img loading="lazy" alt="" src={img5} />
                         </a>
                     </li >
-                    <li onClick={() => handleImageOpen(img6, "Ananya yuva puraskara")}>
+                    <li onClick={() => handleImageOpen(img6, "ALL INDIA RADIO AWARD")}>
                         <a className="profile">
-                            <h2 className="profile__name">Ananya yuva puraskara</h2>
+                            <h2 className="profile__name">ALL INDIA RADIO AWARD</h2>
                             <img loading="lazy" alt="" src={img6} />
                         </a>
                     </li>
@@ -80,12 +80,6 @@ const Awards = () => {
                             <img loading="lazy" alt="" src={img7} />
                         </a>
                     </li >
-                    <li onClick={() => handleImageOpen(img8, "Concert in Italy")}>
-                        <a className="profile">
-                            <h2 className="profile__name">Concert in Italy</h2>
-                            <img loading="lazy" alt="" src={img8} />
-                        </a>
-                    </li>
                 </ul >
             </div >
 

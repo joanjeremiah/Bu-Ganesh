@@ -28,6 +28,7 @@ import img21 from "./assets/gallery/With Sangeetha Kalanidhi Sri. K.V.Narayanasw
 import img22 from "./assets/gallery/With Sri Sanjay Subramanyam.jpg"
 import img23 from "./assets/gallery/With young Abhishek Raghuram.jpg"
 import img24 from "./assets/gallery/with Sangeetha Kalanidhi Sri R K Srikantan.jpg"
+import img25 from "./assets/awards/Concerto.jpg"
 
 const getTouches = (evt) => {
   return (
@@ -204,6 +205,13 @@ export default class Example extends Component {
       content: <div className="spring-3d-container">
       <img loading="lazy"src={img24} className="box" />
       <p>With Sangeetha Kalanidhi Sri R K Srikantan</p>
+    </div>
+    },
+    {
+      key: uuidv4(),
+      content: <div className="spring-3d-container">
+      <img loading="lazy"src={img25} className="box" />
+      <p>Concert in Italy</p>
     </div>
     },
 

@@ -5,21 +5,7 @@ const Artist = ({ stickyRef }) => {
         <div id="artist-section" className="artist-container" ref={stickyRef}>
             <div className="artist">
                 <h1>The Artist</h1>
-                <p>Vidwan B U Ganesh Prasad began his carnatic music training at the age of
-                    six on the violin under Vidwan Basavanagudi G Nataraj,and later,vocal
-                    music under Vidwan Bangalore S Shankar. With this solid foundation,he
-                    sought advanced training in Chennai under Kalai Mamani Prof V V
-                    Subramanyam and Sangita Kalacharya P S Narayanaswamy. Since then he has
-                    never looked back.He has established himself as a distinguished vocalist
-                    and a champion violinist,(solo and accompaniment) performing regularly at
-                    several national and international music festivals and reputable stages.
-                    Vidwan Ganesh Prasad is able to conflate the authentic vocal music
-                    experience and sublime instrumental manodharma in his concerts. His
-                    performances bring the memories of the old doyens of carnatic music and
-                    set the benchmark for the contemporary practitioners of the art. His
-                    adherence to traditional grammar,combined with soulful renditions from his
-                    rich repertoire,can take the devout students of carnatic music on an
-                    unforgettable pilgrimage in aesthetics.
+                <p>Vidwan B U Ganesh Prasad began his carnatic music training at the age of six on the violin under Vidwan Basavanagudi G Nataraj and later vocal music under Vidwan Bangalore S Shankar. With this solid foundation, he sought advanced training in Chennai under Kalai Mamani Prof V V Subramanyam and Sangita Kalacharya P S Narayanaswamy. Since then he has never looked back. He has established himself as a distinguished vocalist and a champion violinist (solo and accompaniment) performing regularly at several national and international music festivals and reputable stages. Vidwan Ganesh Prasad is able to conflate the authentic vocal music experience and sublime instrumental manodharma in his concerts. His performances bring the memories of the old doyens of carnatic music and set the benchmark for the contemporary practitioners of the art. His adherence to traditional grammar,  combined with soulful renditions from his rich repertoire, can take the devout students of carnatic music on an unforgettable pilgrimage in aesthetics.
                 </p>
                 <p>
                     On the violin, he has accompanied great stalwarts, past and present: D

@@ -1,74 +1,116 @@
 [
     {
-        "date": "1-5",
-        "month": "Aug",
-        "location": "Pearland TX",
-        "desc": "Violin workshop for the violin students"
+        "date": "2",
+        "month": "Dec",
+        "desc": "JATA TV MARGHAZHI UTSAVAM 2023 with Madurai TNS Krishna",
+        "location": ""
     },
     {
-        "date": "6",
-        "month": "Aug",
-        "location": "Pearland TX",
-        "desc": "Vocal concert at Meenakshi temple"
+        "date": "3",
+        "month": "Dec",
+        "desc": "Vocal Concert (Private event) Performing exclusive Sri Muthusamy Dixithar Krithis accompanied by Madan Mohan Violin and N.C.Bharadwaj on Mridangam",
+        "location": ""
     },
     {
-        "date": "12",
-        "month": "Aug",
-        "location": "KSHT, Frisco TX",
-        "desc": " Vocal concert"
+        "date": "5",
+        "month": "Dec",
+        "desc": "R.R.Sabha with  Sri Ashok Ramani at 6 pm",
+        "location": ""
     },
     {
-        "date": "13",
-        "month": "Aug",
-        "location": "Frisco TX",
-        "desc": "Vocal & Violin workshop"
+        "date": "11",
+        "month": "Dec",
+        "desc": "Vani Mahal with Sri Abishek Raghuram at 6 30 pm",
+        "location": ""
     },
     {
-        "date": "20",
-        "month": "Aug",
-        "location": "Frisco TX",
-        "desc": "Violin Solo (Chamber music )"
+        "date": "14",
+        "month": "Dec",
+        "desc": "Karthik fine arts Ashok Ramani 7 pm",
+        "location": ""
     },
     {
-        "date": "22-26",
-        "month": "Aug",
-        "location": "Cary NC",
-        "desc": "Vocal Workshop"
-    },
-    {
-        "date": "27",
-        "month": "Aug",
-        "location": "Cary NC",
-        "desc": "Vocal concert"
-    },
-    {
-        "date": "2-3",
-        "month": "Sep",
-        "location": "Swati Thirunal kritis, Charlotte NC",
-        "desc": "Vocal workshop"
-    },
-    {
-        "date": "10",
-        "month": "Sep",
-        "location": "Tampa FL",
-        "desc": "Vocal concert"
-    },
-    {
-        "date": "16",
-        "month": "Sep",
-        "location": "Seattle WA",
-        "desc": "Violin Solo"
+        "date": "15",
+        "month": "Dec",
+        "desc": "Vani Mahal with Sri Sunil Gargeyan at 4 pm",
+        "location": ""
     },
     {
         "date": "17",
-        "month": "Sep",
-        "location": "SIFAA RALEIGH NC",
-        "desc": "Violin Solo"
+        "month": "Dec",
+        "desc": "Music Academy with Sri Ashwath Narayanan at 6 45 pm",
+        "location": ""
+    },
+    {
+        "date": "18",
+        "month": "Dec",
+        "desc": "Mylapore Fine arts with Sri Cherthalai Ranganatha Sharma at 4 pm",
+        "location": "Mylapore"
+    },
+    {
+        "date": "19",
+        "month": "Dec",
+        "desc": "Parthasarathy swamy Sabha with Sri Vijay Siva at 6 30 pm",
+        "location": ""
+    },
+    {
+        "date": "22",
+        "month": "Dec",
+        "desc": "Carnatica Global Heritage arts festival with Sri Kunnakudi Balamurali",
+        "location": ""
+    },
+    {
+        "date": "23",
+        "month": "Dec",
+        "desc": "Chennai fine arts with Sri K.Vaageesh at 10 AM",
+        "location": "Chennai"
+    },
+    {
+        "date": "23",
+        "month": "Dec",
+        "desc": "Brahma Gana Sabha My Vocal Concert accompanied by Sri Mysore Srikanth on Violin, Sri Trichur Narendranath on the Mridangam and Sri K.V.Gopalakrishnan on the Kangeera at 4 PM",
+        "location": ""
     },
     {
         "date": "24",
-        "month": "Sep",
-        "location": "SBAT, Maryland",
-        "desc": "Vocal concert"
+        "month": "Dec",
+        "desc": "Madhuradwani Arkay convention hall with Hyderabad brothers at 6 30 pm",
+        "location": "Arkay convention hall"
+    },
+    {
+        "date": "25",
+        "month": "Dec",
+        "desc": "Thiruvarur Girish Giri Trading Hall Mylapore with Hyderabad brothers at 6 30 pm",
+        "location": "Thiruvarur Girish Giri Trading Hall Mylapore"
+    },
+    {
+        "date": "27",
+        "month": "Dec",
+        "desc": "Brahma Gana Sabha with Hyderabad brothers at 6 30 pm",
+        "location": ""
+    },
+    {
+        "date": "28",
+        "month": "Dec",
+        "desc": "Neelakantan Sivan cultural academy with Hyderabad brothers",
+        "location": ""
+    },
+    {
+        "date": "29",
+        "month": "Dec",
+        "desc": "Charsur with Kruthika Bhat at 4 pm to 6 pm",
+        "location": ""
+    },
+    {
+        "date": "30",
+        "month": "Dec",
+        "desc": "Chennai fine arts, Shastri hall with Ashok Ramani at 9 30 AM",
+        "location": "Shastri hall"
+    },
+    {
+        "date": "1",
+        "month": "Jan",
+        "desc": "Rasika fine arts with Madurai TNS Krishna",
+        "location": ""
     }
 ]

@@ -21,6 +21,9 @@ import Footer from "./Footer";
 import Gallery from "./Gallery";
 import Citations from "./Citations";
 
+import concert1 from "./assets/concert1.jpg"
+import concert2 from "./assets/concert2.jpg"
+
 const slides = [
   {
     city: 'The Violinist Steals The Show',
@@ -78,6 +81,26 @@ function App() {
   };
 
   window.addEventListener("scroll", debounce(handleScroll));
+  // return (
+  //   <div>
+  //     <Navbar sticky={isSticky} />
+  //     <CitiesSlider slides={slides} />
+  //     <Artist stickyRef={stickyRef} />
+  //     <Awards />
+  //     <Citations />
+  //     <PlayList />
+  //     <Videos />
+  //     <div id="gallery-section-container">
+  //       <PhoneDetector />
+  //       <Gallery/>
+  //     </div>
+  //     <div className="back-drop"><div></div></div>
+  //     <Schedule />
+  //     <Contact/>
+  //     <Footer />
+  //   </div>
+  // )
+
   return (
     <div>
       <Navbar sticky={isSticky} />
@@ -92,7 +115,10 @@ function App() {
         <Gallery/>
       </div>
       <div className="back-drop"><div></div></div>
-      <Schedule />
+      <div style={{padding: "8rem 0", display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <img src={concert1} style={{width: '35vw'}} />
+        <img src={concert2} style={{width: '35vw'}} />
+      </div>
       <Contact/>
       <Footer />
     </div>

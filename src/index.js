@@ -115,7 +115,7 @@ function App() {
         <Gallery/>
       </div>
       <div className="back-drop"><div></div></div>
-      <div style={{padding: "0 0 8rem 0", display: "flex", justifyContent: "center", alignItems: "center", background: "white"}}>
+      <div style={{padding: "0 0 8rem 0", display: "flex", justifyContent: "center", alignItems: "center", background: "white", flexDirection: "column"}}>
         <img src={concert1} style={{width: '70vw', height: '70vh', marginBottom: '4rem'}} />
         <img src={concert2} style={{width: '70vw', height: '70vh'}} />
       </div>
